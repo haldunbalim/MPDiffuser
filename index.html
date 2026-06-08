@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css?v=20260602-video-layout">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260608-sampling-video">
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -136,17 +136,15 @@
           <figcaption>Car Navigation Example</figcaption>
         </figure>
       </div>
-      <div class="sampling-copy-row">
-        <figure class="paper-figure sampling-figure">
-          <video class="sampling-video" autoplay muted loop playsinline preload="metadata">
-            <source src="./static/videos/AnimatedFig-MPDiffuser_cropped_h264.mp4" type="video/mp4">
-            <source src="./static/videos/AnimatedFig-MPDiffuser_cropped.mp4" type="video/mp4">
-          </video>
-        </figure>
-        <p class="section-copy method-copy">
-          MPDiffuser couples a diffusion planner with a diffusion dynamics model and a lightweight ranker. The planner proposes task-aligned trajectories, the dynamics model repeatedly corrects feasibility during sampling, and the ranker selects trajectories that best satisfy the objective. The car navigation example illustrates the motivation: prior diffusion samplers can produce state sequences or actions that diverge when executed, while MPDiffuser generates trajectories that remain faithful to the system dynamics.
-        </p>
-      </div>
+      <figure class="paper-figure sampling-figure">
+        <video class="sampling-video" autoplay muted loop playsinline preload="metadata">
+          <source src="./static/videos/AnimatedFig3-MPDiffuser.mov?v=20260608-sampling-video">
+        </video>
+        <figcaption>During sampling, MPDiffuser alternates task-planning denoising with dynamics correction, refining trajectories into feasible rollouts before ranking.</figcaption>
+      </figure>
+      <p class="section-copy method-copy">
+        MPDiffuser couples a diffusion planner with a diffusion dynamics model and a lightweight ranker. The planner proposes task-aligned trajectories, the dynamics model repeatedly corrects feasibility during sampling, and the ranker selects trajectories that best satisfy the objective. The car navigation example illustrates the motivation: prior diffusion samplers can produce state sequences or actions that diverge when executed, while MPDiffuser generates trajectories that remain faithful to the system dynamics.
+      </p>
     </div>
   </section>
 

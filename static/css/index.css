@@ -383,25 +383,22 @@ a:hover {
   width: 100%;
 }
 
-.sampling-copy-row {
-  align-items: center;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
-  margin: 2rem auto 0;
-  max-width: 1080px;
-}
-
 .method-copy {
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 2rem;
   text-align: left;
 }
 
 .sampling-figure {
-  margin: 0;
-  max-width: 380px;
-  width: 100%;
+  background: #ffffff;
+  border: 1px solid #d8dedb;
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  margin: 3rem auto 0;
+  max-width: 100%;
+  object-fit: contain;
+  width: 75%;
 }
 
 .sampling-video {
@@ -628,16 +625,6 @@ a:hover {
   .method-figure-row {
     gap: 1.6rem;
     grid-template-columns: 1fr;
-  }
-
-  .sampling-copy-row {
-    gap: 1.25rem;
-    grid-template-columns: 1fr;
-  }
-
-  .sampling-figure {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .d4rl-benchmark-row {

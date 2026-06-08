@@ -27,8 +27,7 @@ static/**
 !static/js/
 !static/js/fontawesome.all.min.js
 !static/videos/
-!static/videos/AnimatedFig-MPDiffuser_cropped.mp4
-!static/videos/AnimatedFig-MPDiffuser_cropped_h264.mp4
+!static/videos/AnimatedFig3-MPDiffuser.mov
 !static/videos/car.gif
 !static/videos/fetch-pick-and-place-grid.mp4
 !static/videos/kitchen-4x.mp4
