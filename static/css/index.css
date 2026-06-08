@@ -383,15 +383,24 @@ a:hover {
   width: 100%;
 }
 
+.sampling-copy-row {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  margin: 2rem auto 0;
+  max-width: 1080px;
+}
+
 .method-copy {
   margin-bottom: 0;
-  margin-top: 2rem;
+  margin-top: 0;
   text-align: left;
 }
 
 .sampling-figure {
-  margin: 2rem auto 0;
-  max-width: 760px;
+  margin: 0;
+  max-width: 380px;
   width: 100%;
 }
 
@@ -619,6 +628,16 @@ a:hover {
   .method-figure-row {
     gap: 1.6rem;
     grid-template-columns: 1fr;
+  }
+
+  .sampling-copy-row {
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  .sampling-figure {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .d4rl-benchmark-row {
