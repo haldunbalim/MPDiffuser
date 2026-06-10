@@ -3,7 +3,7 @@
 ### [Paper](https://arxiv.org/abs/2512.08280) | [Project Page](TODO)
 
 <p align="center">
-  <video src="assets/AnimatedFig3-MPDiffuser.mov" autoplay loop muted playsinline width="70%"></video>
+  <img src="assets/AnimatedFig3-MPDiffuser.gif" alt="MPDiffuser" width="70%">
 </p>
 
 Official implementation of **Model-Based Diffusion Sampling for Predictive Control in Offline Decision Making**.
