@@ -1,0 +1,11 @@
+_target_: mpdiffuser.model.Diffuser
+# these will be overwritten by the dataset once initialized
+nx: 
+nu: 
+
+horizon: 32
+n_steps: 100
+unet_dim: 128
+attention: false 
+unet_dim_mults: [1, 4, 8]
+predict_noise: true

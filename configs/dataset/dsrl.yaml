@@ -1,0 +1,14 @@
+_target_: mpdiffuser.dataset.DSRLDataset
+
+dset_name: OfflineHopperVelocityGymnasium-v1
+pad: true
+finite_horizon: false
+
+condition_dim: 2
+
+horizon: ${model.horizon}
+num_ctx_x: 1 
+num_ctx_u: 0
+discount: 0.997
+normalize_obs: true
+normalize_actions: true

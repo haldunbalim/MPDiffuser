@@ -1,0 +1,11 @@
+_target_: mpdiffuser.model.ValueFunction
+# these will be overwritten by the dataset once initialized
+nx: 
+nu: 
+
+horizon: 32
+
+resnet_dim_mults: [1, 4, 8]
+resnet_dim: 128
+
+n_steps: 100

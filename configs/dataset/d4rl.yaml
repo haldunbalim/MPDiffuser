@@ -1,0 +1,15 @@
+_target_: mpdiffuser.dataset.D4RLDataset
+
+dset_name: hopper-medium-v2
+pad: true
+finite_horizon: false
+termination_pen: 100
+
+condition_dim: 1
+
+horizon: ${model.horizon}
+num_ctx_x: 1 
+num_ctx_u: 0
+discount: 0.997
+normalize_obs: true
+normalize_actions: true

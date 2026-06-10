@@ -1,0 +1,35 @@
+hydra:
+  run:
+    dir: .
+  job_logging:
+    disable_existing_loggers: false
+    root:
+      handlers: []
+  output_subdir: null
+
+  
+defaults:
+  - _self_
+  - model: ~
+  - dataset: ~
+
+# misc settings
+seed: 0
+use_wandb: False
+wandb_project_name: "MPDiffuser"
+wandb_tag: ''
+save_every_n_epochs: 10
+num_epochs: 100
+num_train_steps: 10_000
+num_val_steps: 100
+
+# training settings
+batch_size: 64
+ema_tau: 0.005
+update_ema_every: 10
+resume: false
+
+# optimizer settings
+lr0: 2e-4
+weight_decay: 0.0
+gradient_clip_val: 1.0

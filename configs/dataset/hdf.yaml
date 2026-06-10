@@ -1,0 +1,18 @@
+_target_: mpdiffuser.dataset.HDFDataset
+
+dset_name: 
+hdf_path: 
+env_name: 
+condition_fields: []
+pad: true
+finite_horizon: false
+termination_pen: 100
+
+condition_dim: 
+
+horizon: ${model.horizon}
+num_ctx_x: 1
+num_ctx_u: 0
+discount: 0.997
+normalize_obs: true
+normalize_actions: true

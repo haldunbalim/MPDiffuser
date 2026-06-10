@@ -1,0 +1,8 @@
+_target_: mpdiffuser.model.InvDynModel
+
+# these will be overwritten by the dataset once initialized
+nx: 
+nu: 
+
+horizon: 32
+hidden_dims: [256, 256]

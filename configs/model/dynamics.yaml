@@ -1,0 +1,15 @@
+_target_: mpdiffuser.model.DynamicsModel
+# these will be overwritten by the dataset once initialized
+nx: 
+nu: 
+
+horizon: 32
+n_steps: 100
+unet_dim: 128
+x0_embed_dim: 128
+attention: false
+unet_dim_mults: [1, 4, 8]
+condition_dropout: 0.25
+predict_noise: true
+
+condition_dim: ${dataset.condition_dim}
